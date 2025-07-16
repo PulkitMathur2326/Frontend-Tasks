@@ -1,0 +1,86 @@
+.card-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: rem(32px);
+  padding: rem(32px);
+
+  &__item {
+    width: rem(300px);
+    background-color: $color-white;
+    border-radius: rem(8px);
+    box-shadow: 0 rem(2px) rem(8px) $color-shadow;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    @include card-hover;
+  }
+
+  &__image-wrapper {
+    width: 100%;
+    height: rem(300px);
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: fill;
+      display: block;
+    }
+  }
+
+  &__content {
+    padding: rem(16px);
+    flex-grow: 1;
+  }
+
+  &__title {
+    font-size: rem(20px);
+    margin-bottom: rem(8px);
+    color: #333;
+  }
+
+  &__description {
+    font-size: rem(16px);
+    color: $color-gray;
+  }
+
+  &__button {
+    display: inline-block;
+    margin-top: rem(16px);
+    padding: rem(8px) rem(16px);
+    border: none;
+    border-radius: rem(4px);
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.3s ease;
+
+    &--primary {
+      background-color: #007bff;
+      color: #fff;
+
+      &:hover {
+        background-color: #0056b3;
+      }
+    }
+
+    &--secondary {
+      background-color: #6c757d;
+      color: #fff;
+
+      &:hover {
+        background-color: #545b62;
+      }
+    }
+
+    &--accent {
+      background-color: #28a745;
+      color: #fff;
+
+      &:hover {
+        background-color: #1e7e34;
+      }
+    }
+  }
+}
