@@ -44,7 +44,7 @@ cities.forEach(city => {
   card.className = "card-grid__item";
   card.innerHTML = `
     <div class="card-grid__image-wrapper">
-      <img src="${city.image}" alt="${city.name}">
+      <img src="${city.image}" alt="${city.name}" loading="lazy">
     </div>
     <div class="card-grid__content">
       <h3 class="card-grid__title">${city.name}</h3>
