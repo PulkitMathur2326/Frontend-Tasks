@@ -32,7 +32,7 @@ const cities = [
   {
     name: "Agra",
     description: "Click to explore detailed travel plans for Agra!",
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/The_Golden_Temple_of_Amrithsar_7.jpg/1200px-The_Golden_Temple_of_Amrithsar_7.jpg",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTla3YEp5s70-XKTm_J6d_m0n6Be9f_QaOh6A&s",
     buttonStyle: "accent"
   }
 ]
